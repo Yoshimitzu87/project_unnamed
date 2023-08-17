@@ -6,39 +6,55 @@ body {
 }
 
 .page {
-  background: url(img/background_page1.png) center center fixed;
-  background: size 100%;
-  background-repeat: repeat;
-  background-color: black;
+  background: url(img/background_page1.png), url(img/background_page2.png);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, repeat;
 }
 
 a:visited {
   color: white;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: aquamarine;
 }
 
 .header {
-  margin-bottom: 46px;
+  padding-top: 27px;
+  margin-bottom: 156px;
 }
 
-.header.container {
+.header__container {
+  width: 1141px;
   margin: 0 auto;
+  position: relative;
 }
 
 .logo__pic {
   display: inline-block;
-  padding-left: 390px;
-  vertical-align: top;
-  margin-top: 29px;
-  width: 85px;
-  height: 36px;
+  top: 0px;
+  position: absolute;
+  max-width: 85px;
+}
+
+
+
+.logo__pic__img {
+  display: block;
+  max-width: 100%;
 }
 
 .contacts {
-  vertical-align: top;
+  position: absolute;
+  max-width: 100%;
   display: inline-block;
   text-align: right;
-  margin-left: 522px;
-  margin-top: 26.6px;
+  right: 0px;
 }
 
 .contacts__phone {
@@ -56,18 +72,17 @@ a:visited {
 .contacts__desc__hover {
   visibility: hidden;
   text-align: center;
-  
+
 }
 
 .contacts__desc__hover-textlineup {
-  margin-top: -50px;
   font-size: 13px;
   font-weight: 700;
   line-height: 21px;
   color: black;
 }
 
-.contacts__desc__hover-textlinebot{
+.contacts__desc__hover-textlinebot {
   font-size: 13px;
   font-weight: 400;
   line-height: 21px;
@@ -75,11 +90,11 @@ a:visited {
 }
 
 .contacts__desc:hover {
-  .contacts__desc__hover{
+  .contacts__desc__hover {
     visibility: visible;
     opacity: 80%;
     transition: margin-bottom 2s;
-   }
+  }
 }
 
 .menu {
@@ -90,30 +105,42 @@ a:visited {
 }
 
 .menu__container {
-  margin-left: 79px;
-  margin-top: 42px;
+  padding-left: 79px;
+  margin: 0 auto;
+
+
+}
+
+.menu__container__list {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.menu__container__list-item {
+  display: inline-block;
+  padding-left: 55px;
 }
 
 .services-link {
   margin-inline: 55px;
 }
 
-.c
+
 
 .maincontent {
   color: white;
 }
 
 .maincontent__container {
-  margin-left: 390px;
-}
-
-.tour__data {
-  margin-bottom: 200px;
+  width: 1141px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 46px;
 }
 
 .tour {
   width: 511px;
+  margin-bottom: 205px;
 }
 
 .tour__title {
@@ -121,6 +148,7 @@ a:visited {
   font-weight: 700;
   line-height: 98.05px;
   color: white;
+  margin: 0;
 }
 
 .tour__desc {
@@ -129,6 +157,7 @@ a:visited {
   font-weight: 400;
   line-height: 20px;
   color: white;
+  padding-bottom: 35px;
 }
 
 .tour__button {
@@ -137,20 +166,30 @@ a:visited {
   height: 55px;
   width: 168px;
   border-radius: 35px;
-  margin-top: 33.5px;
+  padding-top: 33.5px;
   font-size: 14px;
   line-height: 19.07px;
   font-weight: 700;
+  border-width: 0px;
+  outline: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.tour__button:hover {
+  cursor: pointer;
 }
 
 .hot__tour {
-  margin-left: -1px;
   color: white;
+  margin-bottom: 127px;
+}
+
+.hot__tour-fire-img {
+  display: inline-block
 }
 
 .container__hot__tour {
-
-  height: 549px;
   position: relative;
 }
 
@@ -158,18 +197,29 @@ a:visited {
   font-weight: 700;
   font-size: 36px;
   line-height: 49.03px;
-  width: 273px;
-  height: 49px;
+  display: inline-block;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-bottom: 51px;
 }
 
-.hot__tour-fire-img {
-  left: 285px;
-  top: 13px;
-  position: absolute;
+.hot__tour-head::after {
+  content: url(img/flame.png);
+  padding-left: 10px;
+}
+
+.hot__tour__list {
+  list-style-type: none;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 .hot__tour__box {
   color: black;
+
 }
 
 .hot__tour__button {
@@ -177,42 +227,66 @@ a:visited {
   height: 55px;
   color: rgba(245, 23, 14, 1);
   border-radius: 35px;
-  margin-top: 24.5px;
-  margin-left: 24px;
   border-color: red;
-  margin-bottom: 26px;
   font-size: 14px;
   font-weight: 700;
   line-height: 19px;
+  outline: 0px;
+  border-width: 2px;
 }
 
-.hot__tour__button:hover{
+.hot__tour__button__box {
+  padding-left: 26px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.hot__tour__button:hover {
   background-color: red;
   color: white;
+  cursor: pointer;
 }
 
 
-.hot__tour__thai {
+.hot__tour__list__item {
   display: inline-block;
   color: black;
   background: white;
   width: 362px;
+  border-radius: 5px 5px 0 0;
+  margin-right: 15px;
 }
 
-.hot__tour__bali {
+.hot__tour__box__content {
+  list-style-type: none;
   display: inline-block;
-  margin-left: 27px;
-  color: black;
-  background: white;
-  width: 362px;
+  padding-inline-start: 0;
+  padding-left: 28px;
+  padding-top: 21px;
+  vertical-align: middle;
 }
 
-.hot__tour__ocean {
+.calendar__hot__tour {
   display: inline-block;
-  margin-left: 27px;
-  color: black;
-  background: white;
-  width: 362px;
+  vertical-align: middle;
+}
+
+.meals__hot__tour {
+  display: inline-block;
+  padding-left: 28px;
+  vertical-align: middle;
+}
+
+.calendar__hot__tour::before {
+  content: url(img/icons/calendar.png);
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+.meals__hot__tour::before {
+  content: url(img/icons/meal.png);
+  padding-right: 10px;
+  vertical-align: top;
 }
 
 .hot__tour__box__desc {
@@ -227,83 +301,94 @@ a:visited {
   padding-left: 22px;
   font-size: 24px;
   font-weight: 700;
-  line-height: 32.68px;
+  line-height: 33px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-top: 33px;
 }
-
-.calendar__icon {
-  padding-left: 28px;
-  padding-top: 21px;
-}
-
-.calendar__icon__decs {
-  top: -5px;
-  position: relative;
-}
-
-.meals__icon {
-  padding-left: 28px;
-  padding-top: 19px;
-}
-
-.meals__icon__desc {
-  position: relative;
-  top: -5px;
-}
-
-
 
 .news__actions {
-  margin-top: 120px;
   overflow: hidden;
   margin: auto 0;
   color: white;
+  margin-bottom: 127px;
 }
 
-.news__actions__block__left {
+.news__actions-blocks {
+  padding-inline-start: 0px;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.news__actions-head {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  padding-bottom: 51px;
+}
+
+.news__actions__block {
   width: 557px;
   display: inline-block;
+  list-style-type: none;
+  padding-right: 10px;
+  position: relative;
 }
 
-.news__actions-date{
+.news__actions-content-left {
   position: absolute;
-  padding-left: 30px;
-  margin-top: -125px;
+  bottom: 75px;
+  left: 30px;
+  max-width: auto;
+}
+
+.news__actions-content-right {
+  position: absolute;
+  bottom: 55px;
+  left: 30px;
+  max-width: auto;
+}
+
+.news__actions-date {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .news__actions-header {
-  position: absolute;
-  padding-left: 31px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 36px;
-  margin-top: -108px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  padding-top: 13px;
+  padding-left: 1px;
 }
 
-.news__actions-content{
+
+.news__actions-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
-  padding-left: 32px;
-  margin-top: -75px;
+  padding-left: 2px;
+  padding-top: 4px;
 }
 
-
-.news__actions__block__right {
-  padding-left: 25px;
-  width: 557px;
-  display: inline-block;
+.news__actions-text2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  padding-left: 2px;
+  padding-top: 15px;
 }
 
 .tour__pagination {
   margin: auto 0;
-  
+
 }
 
 .tour__pagination {
   padding-left: 382px;
-  padding-top: 110px;
+  padding-top: 58px;
 }
 
 .tour__pagination-display {
@@ -337,10 +422,12 @@ a:visited {
   font-weight: 700px;
   line-height: 21px;
 }
-.tour__pagination-link{
+
+.tour__pagination-link {
   text-decoration: none;
 }
-.tour__pagination-item:hover{
+
+.tour__pagination-item:hover {
   color: aqua;
   text-decoration: none;
 }
@@ -352,42 +439,50 @@ a:visited {
   margin-top: -7px;
 }
 
-.tour__pagination-item:hover{
+.tour__pagination-item:hover {
   color: red;
-  .hover__pagi__button-img{
+
+  .hover__pagi__button-img {
     display: inline-block;
     visibility: visible;
     opacity: 70%;
-}
-  .tour__pagination-link{
+    padding: auto;
+  }
+
+  .tour__pagination-link {
     opacity: 100%;
     color: red;
-    
+
   }
 }
 
-.about__us{
-  margin-top: 125px;
+.about__us {
+  position: relative;
+  padding-bottom: 100px;
+
 }
 
-.about__us-text {
+.about__us-content {
   position: absolute;
-  display: inline-block;
+  bottom: 100px;
+  left: 435px;
+}
+
+.about__us-head {
   font-size: 36px;
   font-weight: 700;
   line-height: 49px;
   color: black;
-  margin-left: -704px;
-  padding-top: 70px;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-bottom: 37px;
 }
 
-.about__us__cont {
-  position: absolute;
+.about__us__text {
   display: inline-block;
   color: black;
   width: 502px;
-  margin-left: -704px;
-  padding-top: 156px;
+  padding-bottom: 43px;
 }
 
 .about__us__img-first {
@@ -398,29 +493,51 @@ a:visited {
 .about__us__img-second {
   position: absolute;
   padding-top: 97px;
-  margin-left: 354px;
+  padding-left: 354px;
   display: inline-block;
   z-index: 1;
 }
 
-.about__us__button{
-  position: absolute;
-  display: inline-block;
-  width: 155px;
+.about__us__button {
+  display: block;
+  width: 168px;
   height: 55px;
   color: rgba(245, 255, 255, 1);
   border-radius: 35px;
   border-color: red;
   background-color: red;
-  margin-left: -704px;
-  margin-top: 280px;
-  
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.about__us__button:hover {
+  cursor: pointer;
 }
 
 .footer {
   vertical-align: bottom;
   padding-top: 600px;
+  padding-bottom: 50px;
   color: black;
+  margin: 0 auto;
+  width: 1141px;
+}
+
+.container__footer {
+  position: relative;
+  height: 50px;
+}
+
+.logo__pic__footer {
+  display: inline-block;
+  position: absolute;
+  max-width: 85px;
+}
+
+.logo__pic__img {
+  display: block;
+  max-width: 100%;
 }
 
 .footer__socials {
@@ -435,7 +552,7 @@ a:visited {
   margin-block-start: 0px;
   margin-block-end: 0px;
   padding-inline-start: 0px;
-  margin-left: 200px;
+  padding-left: 200px;
 }
 
 .socials__item {
@@ -445,8 +562,20 @@ a:visited {
 }
 
 .contacts__footer {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
   display: inline-block;
   text-align: right;
-  margin-left: 1300px;
-  margin-top: -100px; 
-} 
+  right: 0px;
+}
+.contacts__phone__footer{
+  font-size: 21px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu__container__list__footer {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
