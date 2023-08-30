@@ -7,15 +7,6 @@ body {
   margin: 0 auto;
 }
 
-.page {
-  background: url(img/background_page1.png), url(img/background_page2.png);
-  background-position: left top, right bottom;
-  background-repeat: no-repeat, no-repeat;
-  background-color: rgb(23, 23, 31);
-
-  
-}
-
 a:visited {
   color: white;
   text-decoration: none;
