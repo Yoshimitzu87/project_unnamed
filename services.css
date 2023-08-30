@@ -24,7 +24,7 @@ a:hover {
   display: flex;
   min-height: 420px;
   padding-top: 27px;
-  background: url(/img/services_header_bckgrnd.png);
+  background: url(./img/services_header_bckgrnd.png);
   margin: 0 auto;
 
 }
