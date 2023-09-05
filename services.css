@@ -2,10 +2,12 @@ body {
   font-family: 'Open Sans', Hevetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
 }
 
 .page {
-  background-color: rgb(23, 23, 31);
+  border: none;
+  outline: none;
 }
 
 a:visited {
