@@ -10,6 +10,7 @@ body {
   background-position: left top, right bottom;
   background-repeat: no-repeat, no-repeat;
   background-color: rgb(23, 23, 31);
+  background-size: 100%;
 }
 
 a:visited {
@@ -534,6 +535,7 @@ a:hover {
   color: black;
   margin: 0 auto;
   width: 1141px;
+  flex: 0 0 auto;
 }
 
 .container__footer {

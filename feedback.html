@@ -20,7 +20,7 @@
               <img src="img/logo1.png" alt="logo" class="logo__pic__img"></a>
           </div>
           <nav class="menu">
-            <div class="menu__container">
+            <div class="menu__container" class="menu__container__header">
               <ul class="menu__container__list">
                 <li class="menu__container__list-item"><a href="./index.html">Главная</a></li>
                 <li class="menu__container__list-item"><a href="./services.html">Услуги</a></li>
@@ -83,7 +83,7 @@
                 </div>
               </div>
               <div class="feedbacks__container-item-body">
-                <h2 class="feedbacks__container-item-body-header">Крутой поход на водопады.</h2>
+                <h2 class="feedbacks__container-item-body-header">Интересный тур по Таю.</h2>
                 <div class="feedbacks__container-item-body-text">Сайт рыбатекст поможет дизайнеру, верстальщику,
                   вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а
                   начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора
@@ -98,12 +98,12 @@
               <div class="feedbacks__container-item-head">
                 <img src="./img/avatars/girl1.jpg" alt="girl2" class="feedbacks__container-item-avatar">
                 <div class="feedbacks__container-item-head-flex">
-                <a href="#" class="feedbacks__container-item-link">Екатерина Жмых</a>
-                <div class="feedbacks__container-item-location">Тур на Остров обьезьян</div>
-              </div>
+                  <a href="#" class="feedbacks__container-item-link">Екатерина Жмых</a>
+                  <div class="feedbacks__container-item-location">Тур на Остров обьезьян</div>
+                </div>
               </div>
               <div class="feedbacks__container-item-body">
-                <h2 class="feedbacks__container-item-body-header">Крутой поход на водопады.</h2>
+                <h2 class="feedbacks__container-item-body-header">Очень поравился тур на остров обьезьян.</h2>
                 <div class="feedbacks__container-item-body-text">Сайт рыбатекст поможет дизайнеру, верстальщику,
                   вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а
                   начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора
@@ -115,16 +115,17 @@
             </li>
             <li class="feedbacks__container-item">
               <div class="feedbacks__container-item-head">
-                
+
                 <img src="./img/avatars/brunette.jpg" alt="brun" class="feedbacks__container-item-avatar">
                 <div class="feedbacks__container-item-head-flex">
-                <a href="#" class="feedbacks__container-item-link">Антон Игоревич</a>
-              
-                <div class="feedbacks__container-item-location">Тур по Индонезии</div>
+                  <a href="#" class="feedbacks__container-item-link">Антон Игоревич</a>
+
+                  <div class="feedbacks__container-item-location">Тур по Индонезии</div>
+                </div>
               </div>
-            </div>
               <div class="feedbacks__container-item-body">
-                <h2 class="feedbacks__container-item-body-header">Крутой поход на водопады.</h2>
+                <h2 class="feedbacks__container-item-body-header">Для первого раза выбрал тур по Индонезии. И не
+                  пожалел!</h2>
                 <div class="feedbacks__container-item-body-text">Сайт рыбатекст поможет дизайнеру, верстальщику,
                   вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а
                   начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора
@@ -134,11 +135,110 @@
             </li>
           </ul>
         </div>
+        <div class="tour__pagination">
+          <div class="tour__pagination-display">Страница 1 из 7</div>
+          <div class="tour__pagination-elem">
+            <ul class="tour__pagination-pages">
+              <li class="tour__pagination-item">
+                <a href="#" class="tour__pagination-link">1</a>
+              </li>
+              <li class="tour__pagination-item">
+                <a href="#" class="tour__pagination-link">2</a>
+              </li>
+              <li class="tour__pagination-item">
+                <a href="#" class="tour__pagination-link">3</a>
+              </li>
+              <li class="tour__pagination-item">
+                <a href="#" class="tour__pagination-link">4</a>
+              </li>
+              <li class="tour__pagination-item">
+                <a href="#" class="tour__pagination-link">5</a>
+              </li>
+              <li class="tour__pagination-item">
+                <a href="#" class="tour__pagination-link">6</a>
+              </li>
+              <li class="tour__pagination-item">
+                <a href="#" class="tour__pagination-link">7</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="middleline__content">
+          <img src="./img/middleline.jpg" alt="midl" class="middleline-img">
+          <div class="couple__content">
+            <h2 class="couple-text">Подберем тур по вашим пожеланиям</h2>
+            <img src="./img/couple.png" alt="couple">
+          </div>
+        </div>
+      </div>
+      <div class="feedback__form-container">
+        <div class="feedback__form">
+          <form class="feedback__form" action="" method="get">
+
+            <input type="text" name="name" required placeholder="Ваше имя" class="feedback__form-name">
+
+            <input type="text" name="vklink" required placeholder="Ссылка на профиль VK" class="feedback__form-vklink">
+
+            <textarea type="text" name="text" class="feedback__form-text" placeholder="Напишите свой честный отзыв"></textarea>
+            <div class="feedback__form__foot">
+              <div class="feedback__form__foot-text"> Какими услугами компании пользуетесь </div>
+              <ul class="feedback__form-places-list">
+                <li class="feedback__form-places-list-item">Остров обезьян</li>
+                <li class="feedback__form-places-list-item">Тур по Тайланду</li>
+                <li class="feedback__form-places-list-item">Водопад Янг-бей</li>
+                <li class="feedback__form-places-list-item">Тур по Индонезии</li>
+                <li class="feedback__form-places-list-item">Никакими</li>
+                <li class="feedback__form-places-list-item">Тур по Бали</li>
+                <li class="feedback__form-places-list-item">Другими</li>
+              </ul>
+            </div>
+          </form>
+
+          <button type="submit" class="feedback__form-button-send">ОТПРАВИТЬ</button>
+          <button type="submit" class="feedback__form-button-clean">ОЧИСТИТЬ</button>
+          
+        </div>
       </div>
 
     </div>
 
   </div>
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="logo__pic__footer"><img src="img/logo1.png" alt="logo" class="logo__pic__img"></a>
+      <nav class="menu">
+        <div class="menu__container">
+          <ul class="menu__container__list__footer">
+            <li class="menu__container__list-item"><a href="./index.html">Главная</a></li>
+            <li class="menu__container__list-item"><a href="./services.html">Услуги</a></li>
+            <li class="menu__container__list-item"><a href="./feedback.html">Отзывы</a></li>
+          </ul>
+
+        </div>
+      </nav>
+      <div class="footer__socials">
+        <ul class="footer__socials-pages">
+          <li class="socials__item">
+            <a href="#" class="teleg__link"><img src="img/icons/telegram.png" alt="tg"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="vk__link"><img src="img/icons/vk.png" alt="vk"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="f__link"><img src="img/icons/f.png" alt="fb"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="inst__link"><img src="img/icons/in.png" alt="inst"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts__footer">
+        <div class="contacts__desc">Бесплатный звонок по России</div>
+        <a href="tel:+78007003030" class="contacts__phone">8(800)7003030</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>
