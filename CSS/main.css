@@ -325,7 +325,7 @@ a {
   color: black;
   margin-block-end: 0;
   margin-block-start: 0;
-  margin-bottom: 50px;
+  margin-bottom: 37px;
 }
 
 .about__text {
@@ -358,10 +358,11 @@ a {
 }
 
 .about__content {
- padding: 70px 81px;
+ margin-top: 71px;
+ margin-left: 81px;
 }
 
-.about__us__button {
+.about__button {
   display: block;
   width: 168px;
   height: 55px;
