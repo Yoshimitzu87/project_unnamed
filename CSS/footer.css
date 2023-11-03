@@ -1,11 +1,12 @@
 .footer {
   background-color: rgb(0, 24, 33, 1);
-  flex: 0 0 auto;
+  margin: 0 auto;
+  display: flex;
 }
 
 .footer__wrapper {
-  width: 1141px;
-  height: 135px;
+  min-height: 135px;
+  min-width: 1141px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
@@ -13,8 +14,7 @@
 }
 
 .logo {
-  width: 86px;
-  max-width: 100%;
+  min-width: 86px;
 }
 
 .footer__socials {
@@ -27,7 +27,7 @@
   margin-block-end: 0;
   margin-block-start: 0;
   padding-inline-start: 0;
-  margin-left: 250px;
+  margin-left: 155px;
   justify-content: space-between;
 }
 
@@ -38,4 +38,26 @@
 
 .socials__item:hover {
   opacity: 110%;
+}
+
+
+.footer__contacts {
+  margin-left: 74px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.footer__desc {
+  min-width: 210px;
+  font-size: 11px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.footer__phone {
+  font-size: 21px;
+  color: #fff;
+  text-decoration: none;
 }
