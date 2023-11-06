@@ -334,7 +334,7 @@ input:focus {
   font-weight: 700;
   line-height: 19px;
   outline: 0px;
-  border-width: 1px;
+  border-width: 0px;
   outline: 0px;
   display: flex;
   align-items: center;
@@ -357,7 +357,7 @@ input:focus {
   font-weight: 700;
   line-height: 19px;
   outline: 0px;
-  border-width: 1px;
+  border-width: 0px;
   outline: 0px;
   display: flex;
   align-items: center;
