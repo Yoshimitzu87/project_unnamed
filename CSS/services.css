@@ -52,7 +52,7 @@ a {
 .services__list {
   display: flex;
   flex-direction: column;
-  
+  flex-wrap: wrap;
   max-width: 1168px;
   margin: 0 auto;
 }
