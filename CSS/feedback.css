@@ -349,7 +349,7 @@ input:focus {
   padding-block: 0px;
   justify-content: center;
   background-color: red;
-  margin-left: 860px;
+  
 }
 
 .feedback__form-button-send:hover {
@@ -372,6 +372,7 @@ input:focus {
   padding-block: 0px;
   justify-content: center;
   background-color: black;
+  margin-left: 860px;
 }
 
 .feedback__form-button-clean:hover {
