@@ -8,7 +8,7 @@ body {
 
 .wrapper {
   overflow: hidden;
-  
+
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@ body {
   margin-top: 25px;
 }
 
-.welcome__link{
+.welcome__link {
   text-decoration: none;
   color: white;
   display: flex;
@@ -74,11 +74,9 @@ body {
   display: flex;
 }
 
-.logo__img {
-  
-}
+.logo__img {}
 
-.welcome__container{
+.welcome__container {
   display: flex;
   justify-content: center;
   animation: bounce 1s;
@@ -86,30 +84,34 @@ body {
 }
 
 
-@keyframes bounce { 
+@keyframes bounce {
   0% {
     opacity: 0;
     transform: translateY(0);
   }
+
   20% {
     transform: translateY(30px);
     opacity: 20%;
   }
+
   40% {
     transform: translateY(0px);
     opacity: 40%;
   }
+
   60% {
     transform: translateY(10px);
     opacity: 60%;
   }
+
   80% {
     transform: translateY(0px);
     opacity: 80%;
   }
+
   100% {
     opacity: 100%;
-  } 
+  }
 
 }
-

@@ -12,6 +12,12 @@ h2 {
   margin-block-start: 0;
 }
 
+h3 {
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+
+
 ul {
   padding-inline-start: 0px;
   margin-block-start: 0;
@@ -24,6 +30,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0 auto;
 }
+
 .body__wrapper {
   min-width: 1141px;
   margin: 0 auto;
@@ -49,6 +56,7 @@ a {
   max-width: 1141px;
   margin: 0 auto;
   margin-top: 100px;
+  margin-bottom: 79px;
 }
 
 
@@ -64,6 +72,7 @@ a {
   padding-left: 28px;
   padding-top: 50px;
   padding-bottom: 33px;
+  padding-right: 31px;
 }
 
 .item__head {
@@ -161,13 +170,15 @@ a {
   max-width: 100px;
 }
 
-.pagination__wrapper-margin {
-  margin-top: 75px;
-  
-}
 
 
 .couple__wrapper {
+  max-width: 1141px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.couple__content {
   margin-top: 100px;
   min-height: 363px;
   background: url(../img/middleline.png);
@@ -180,11 +191,7 @@ a {
 }
 
 
-.couple__content {
-  max-width: 1141px;
-  margin: 0 auto;
-  display: flex;
-}
+
 
 .couple__text {
   font-size: 48px;
@@ -213,8 +220,9 @@ a {
 
 
 
-.feedback__wrapper {
+.feedback__box {
   background: rgba(244, 245, 245, 1);
+
 }
 
 
