@@ -5,14 +5,8 @@
   background: url(../img/services_header_bckgrnd.png) no-repeat;
   min-width: 100%;
   justify-content: center;
+  background-size: cover;
 }
-
-/* .header__wrapper {
-  display: flex;
-  flex-direction: column;
-  min-width: 100%;
-  margin: 0 auto;
-} */
 
 .header__container {
   min-width: 1141px;

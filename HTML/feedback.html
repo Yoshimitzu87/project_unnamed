@@ -12,106 +12,112 @@
 
 <body>
   <div class="body__wrapper">
-    <header class="header">
-      <div class="header__wrapper">
-        <div class="header__container">
-          <div class="logo">
-            <a href="main.html" class="logo__link">
-              <div class="logo__wrapper"><img src="../img/logo1.png" alt="logo" class="logo__img"></div>
-            </a>
-          </div>
-          <nav class="menu">
-            <div class="menu__wrapper">
-              <ul class="menu__list">
-                <li class="menu__item"><a href="main.html" class="menu__link">Главная</a></li>
-                <li class="menu__item"><a href="services.html" class="menu__link">Услуги</a></li>
-                <li class="menu__item"><a href="feedback.html" class="menu__link menu__link-active">Отзывы</a></li>
-              </ul>
+    <header class="header">      
+        <div class="header__wrapper">
+          <div class="header__container">
+            <div class="logo">
+              <a href="main.html" class="logo__link">
+                <div class="logo__wrapper"><img src="../img/logo1.png" alt="logo" class="logo__img"></div>
+              </a>
             </div>
-          </nav>
-          <div class="header__contacts">
-            <a href="tel:+78007003030" class="contacts__phone">8(800)7003030</a>
-            <div class="contacts__desc">График работы
-              <div class="contacts__desc-hover">
-                <div class="desc__hover__img">
-                  <div class="desc__hover__img__triangle"></div>
+            <nav class="menu">
+              <div class="menu__wrapper">
+                <ul class="menu__list">
+                  <li class="menu__item"><a href="main.html" class="menu__link">Главная</a></li>
+                  <li class="menu__item"><a href="services.html" class="menu__link">Услуги</a></li>
+                  <li class="menu__item"><a href="feedback.html" class="menu__link menu__link-active">Отзывы</a></li>
+                </ul>
+              </div>
+            </nav>
+            <div class="header__contacts">
+              <a href="tel:+78007003030" class="contacts__phone">8(800)7003030</a>
+              <div class="contacts__desc">График работы
+                <div class="contacts__desc-hover">
+                  <div class="desc__hover__img">
+                    <div class="desc__hover__img__triangle"></div>
+                  </div>
+                  <div class="contacts__desc__hover-textlineup">пн-вс: 09:00 - 20:00</div>
+                  <div class="contacts__desc__hover-textlinebot">Обед: 14:00 - 14:30</div>
                 </div>
-                <div class="contacts__desc__hover-textlineup">пн-вс: 09:00 - 20:00</div>
-                <div class="contacts__desc__hover-textlinebot">Обед: 14:00 - 14:30</div>
               </div>
             </div>
           </div>
+          <h1 class="header__text">Отзывы</h1>
+          <nav class="breadcrumbs">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item">
+                <a href="main.html" class="breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs-item">
+                <a href="feedback.html" class="breadcrumbs__link breadcrumbs__link-active">Отзывы</a>
+              </li>
+            </ul>
         </div>
-        <h1 class="header__text">Отзывы</h1>
-        <nav class="breadcrumbs">
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a href="main.html" class="breadcrumbs__link">Главная</a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a href="feedback.html" class="breadcrumbs__link breadcrumbs__link-active">Отзывы</a>
-            </li>
-          </ul>
         </nav>
     </header>
     <div class="page">
       <div class="maincontent">
         <div class="maincontent__wrapper">
-          <ul class="feedbacks__container">
-            <li class="feedbacks__item">
-              <div class="item__wrapper">
-                <div class="item__head">
-                  <img src="../img/avatars/ginger.jpg" alt="ging" class="head__avatar">
-                  <div class="head__content">
-                    <a href="#" class="head__link">Иван Петрович</a>
-                    <div class="head__location">Водопад Янг-бей</div>
+          <ul class="feedbacks">
+            <li class="card">
+              <div class="card__wrapper">
+                <div class="card__head">
+                  <div class="avatar__wrapper"><img src="../img/avatars/ginger.jpg" alt="ging" class="card__avatar"></div>
+                  <div class="card__content">
+                    <a href="#" class="card__link">Иван Петрович</a>
+                    <div class="location__wrapper">
+                    <div class="card__location">Водопад Янг-бей</div></div>
                   </div>
                 </div>
-                <div class="item__body">
-                  <h2 class="body__header">Крутой поход на водопады.</h2>
-                  <div class="body__text">Сайт рыбатекст поможет дизайнеру, верстальщику,
+                <div class="card__body">
+                  <h2 class="card__header">Крутой поход на водопады.</h2>
+                  <div class="card__text">Сайт рыбатекст поможет дизайнеру, верстальщику,
                     вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а
                     начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
                     генератора
                     мы
                     использовали небезизвестный универсальный код речей.</div>
-                  <div class="body__date">Ноябрь 2019</div>
+                  <div class="card__date">Ноябрь 2019</div>
                 </div>
               </div>
             </li>
-            <li class="feedbacks__item">
-              <div class="item__wrapper">
-                <div class="item__head">
-                  <img src="../img/avatars/girl2.jpg" alt="girl2" class="head__avatar">
-                  <div class="head__content">
-                    <a href="#" class="head__link">Лиза Сидорова</a>
-                    <div class="head__location">Тур по Тайланду</div>
+            <li class="card">
+              <div class="card__wrapper">
+                <div class="card__head">
+                  <div class="avatar__wrapper"><img src="../img/avatars/girl2.jpg" alt="girl2" class="card__avatar"></div>
+                  <div class="card__content">
+                    <a href="#" class="card__link">Лиза Сидорова</a>
+                    <div class="location__wrapper">
+                      <div class="card__location">Тур по Тайланду</div>
+                    </div>
                   </div>
                 </div>
-                <div class="item__body">
-                  <h2 class="body__header">Интересный тур по Таю.</h2>
-                  <div class="body__text">Сайт рыбатекст поможет дизайнеру, верстальщику,
+                <div class="card__body height">
+                  <h2 class="card__header">Интересный тур по Таю.</h2>
+                  <div class="card__text">Сайт рыбатекст поможет дизайнеру, верстальщику,
                     вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а
                     начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
                     генератора
                     мы
                     использовали небезизвестный универсальный код речей.</div>
-                  <div class="body__date">Ноябрь 2019</div>
+                  <div class="card__date">Ноябрь 2019</div>
                 </div>
               </div>
             </li>
-            <li class="feedbacks__item">
-              <div class="item__wrapper">
-                <div class="item__head">
-                  <img src="../img/avatars/girl1.jpg" alt="girl2" class="head__avatar">
-                  <div class="head__content">
-                    <a href="#" class="head__link">Екатерина Жмых</a>
-                    <div class="head__location">Тур на Остров обьезьян</div>
+            <li class="card">
+              <div class="card__wrapper">
+                <div class="card__head">
+                  <div class="avatar__wrapper"><img src="../img/avatars/girl1.jpg" alt="girl2" class="card__avatar"></div>
+                  <div class="card__content">
+                    <a href="#" class="card__link">Екатерина Жмых</a>
+                    <div class="location__wrapper">
+                      <div class="card__location">Тур на Остров обьезьян</div>
+                    </div>
                   </div>
                 </div>
-                <div class="item__body">
-                  <h2 class="body__header">Очень поравился тур на остров обьезьян.</h2>
-                  <div class="body__text">Сайт рыбатекст поможет дизайнеру, верстальщику,
+                <div class="card__body">
+                  <h2 class="card__header">Очень поравился тур на остров обьезьян.</h2>
+                  <div class="card__text">Сайт рыбатекст поможет дизайнеру, верстальщику,
                     вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а
                     начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
                     генератора
@@ -120,28 +126,30 @@
                     от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым
                     для
                     визуально-слухового восприятия.</div>
-                  <div class="body__date">Ноябрь 2019</div>
+                  <div class="card__date">Ноябрь 2019</div>
                 </div>
               </div>
             </li>
-            <li class="feedbacks__item">
-              <div class="item__wrapper">
-                <div class="item__head">
-                  <img src="../img/avatars/brunette.jpg" alt="brun" class="head__avatar">
-                  <div class="head__content">
-                    <a href="#" class="head__link">Антон Игоревич</a>
-                    <div class="head__location">Тур по Индонезии</div>
+            <li class="card">
+              <div class="card__wrapper">
+                <div class="card__head">
+                  <div class="avatar__wrapper"><img src="../img/avatars/brunette.jpg" alt="brun" class="card__avatar"></div>
+                  <div class="card__content">
+                    <a href="#" class="card__link">Антон Игоревич</a>
+                    <div class="location__wrapper">
+                      <div class="card__location">Тур по Индонезии</div>
+                    </div>
                   </div>
                 </div>
-                <div class="item__body">
-                  <h2 class="body__header">Для первого раза выбрал тур по Индонезии. И не
+                <div class="card__body">
+                  <h2 class="card__header">Для первого раза выбрал тур по Индонезии. И не
                     пожалел!</h2>
-                  <div class="body__text">Сайт рыбатекст поможет дизайнеру, верстальщику,
+                  <div class="card__text">Сайт рыбатекст поможет дизайнеру, верстальщику,
                     вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а
                     начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
                     генератора
                     мы использовали небезизвестный универсальный код речей.</div>
-                  <div class="body__date">Ноябрь 2019</div>
+                  <div class="card__date">Ноябрь 2019</div>
                 </div>
               </div>
             </li>
@@ -152,26 +160,26 @@
           <div class="pagination__wrapper">
             <div class="pagination__text">Страница 1 из 7</div>
             <ul class="pagination__list">
-              <li class="list__item">
-                <a href="#" class="list__link">1</a>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">1</a>
               </li>
-              <li class="list__item">
-                <a href="#" class="list__link">2</a>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">2</a>
               </li>
-              <li class="list__item">
-                <a href="#" class="list__link">3</a>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">3</a>
               </li>
-              <li class="list__item">
-                <a href="#" class="list__link">4</a>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">4</a>
               </li>
-              <li class="list__item">
-                <a href="#" class="list__link">5</a>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">5</a>
               </li>
-              <li class="list__item">
-                <a href="#" class="list__link">6</a>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">6</a>
               </li>
-              <li class="list__item">
-                <a href="#" class="list__link">7</a>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">7</a>
               </li>
             </ul>
           </div>
@@ -239,8 +247,10 @@
                 </li>
               </ul>
             </div>
-            <button type="reset" class="feedback__form-button-clean">ОЧИСТИТЬ</button>
-            <button type="submit" class="feedback__form-button-send">ОТПРАВИТЬ</button>
+            <div class="buttons__wrapper">
+              <button type="reset" class="feedback__form-button-clean">ОЧИСТИТЬ</button>
+              <button type="submit" class="feedback__form-button-send">ОТПРАВИТЬ</button>
+            </div>
           </form>
 
         </div>
@@ -253,7 +263,7 @@
             <div class="logo__wrapper"><img src="../img/logo1.png" alt="logo" class="logo__img"></div>
           </a>
         </div>
-        <nav class="menu"> 
+        <nav class="menu">
           <div class="menu__wrapper">
             <ul class="menu__list">
               <li class="menu__item"><a href="main.html" class="menu__link">Главная</a></li>

@@ -29,7 +29,7 @@
 
 }
 
-.list__item {
+.pagination__item {
   display: flex;
   font-size: 16px;
   font-weight: 700;
@@ -38,7 +38,7 @@
   height: 30px;
 }
 
-.list__link {
+.pagination__link {
   text-decoration: none;
   border-radius: 50%;
   width: 30px;
@@ -50,12 +50,12 @@
   justify-content: center;
 }
 
-.list__link:visited {
+.pagination__link:visited {
   color: black;
 }
 
-.list__item:hover {
-  color: white;
-  background-color: red;
+.pagination__link:hover {
+  color: #fff;
+  background-color: rgb(245, 5, 5);
   border-radius: 50%;
 }

@@ -1,0 +1,34 @@
+.button {
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#fff;
+  color: rgba(245, 23, 14, 1);  
+  padding: 18px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  border: 1px solid rgba(245, 23, 14, 1);  
+  transition: background-color .9s;
+}
+
+.button:hover {
+  background-color: rgba(218, 23, 14, 1);
+  color: white;
+  cursor: pointer;  
+}
+
+.button--big {
+  padding: 18px 50px;
+}
+
+.button--red {
+  background-color:rgba(245, 23, 14, 1);
+  color: #fff;
+}
+
+.button--red:hover {
+  
+}
